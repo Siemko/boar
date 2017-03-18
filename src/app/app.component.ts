@@ -6,5 +6,7 @@ import { Component } from '@angular/core'
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'app works!'
+  title = `boarBot`
+  subtitle = `Prawdziwy dzik wsórd asystentów głosowych`
+  boarSrc = "../assets/boar.svg"
 }

@@ -28,13 +28,9 @@ export class SpeechRecognitionService {
                     var result = speech.results[speech.resultIndex]
                     var transcript = result[0].transcript
                     if (result.isFinal) {
-                        if (result[0].confidence < 0.3) {
-                            console.log("Nie udało się rozpoznać komendy, spróbuj ponownie")
-                        }
-                        else {
-                            term = transcript
-                            console.log("Rozpoznałem słowo:" + term)
-                        }
+                        term = transcript
+                        console.log("Rozpoznałem słowo: " + term + " z poziomem ufności równym " + result[0].confidence)
+                        
                     }
                 }
                 this.zone.run(() => {

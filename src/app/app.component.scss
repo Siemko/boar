@@ -1,3 +1,4 @@
+
 h1, h2, h3 {
     font-family: 'Raleway', sans-serif;
     text-align: center
@@ -7,6 +8,8 @@ div {
     justify-content: center;
     height: 100%;
     img {
-        transform: rotate(10deg)
+        transform: rotate(10deg);
+        cursor: pointer;
+        height: 50vh;
     }
 }

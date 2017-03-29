@@ -30,7 +30,6 @@ export class SpeechRecognitionService {
                     if (result.isFinal) {
                         term = transcript
                         console.log("Rozpoznałem słowo: " + term + " z poziomem ufności równym " + result[0].confidence)
-                        
                     }
                 }
                 this.zone.run(() => {

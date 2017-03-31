@@ -4,11 +4,13 @@ import { FormsModule } from '@angular/forms'
 import { HttpModule } from '@angular/http'
 
 import { AppComponent } from './app.component'
-import {SpeechRecognitionService} from './shared/shared.service'
+import {SpeechRecognitionService} from './shared/shared.service';
+import { TestComponent } from './test/test.component'
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    TestComponent
   ],
   imports: [
     BrowserModule,

@@ -1,10 +1,7 @@
 language: node_js
 node_js:
   - "6"
-addons:  
-  firefox: latest
-  
-  script: node_modules/karma/bin/karma start karma.conf.js --single-run
+script: .\node_modules\.bin\karma start --browsers Firefox --single-run
   
 before_install:
   - export CHROME_BIN=chromium-browser
